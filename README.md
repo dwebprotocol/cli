@@ -1,15 +1,15 @@
-# Hyperswarm CLI
+# dSwarm CLI
 
-A series of CLI tools to debug and interact with the Hyperswarm network.
+A series of CLI tools to debug and interact with the dWeb network.
 
 ```sh
-npm install -g @hyperswarm/cli
+npm install -g @dswarm/cli
 ```
 
 ## Usage
 
 ```sh
-hyperswarm # will print help
+dswarm # will print help
 ```
 
 ## License
