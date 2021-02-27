@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const hyperswarm = require('hyperswarm')
+const dswarm = require('dswarm')
 const sodium = require('sodium-native')
 const minimist = require('minimist')
 const pump = require('pump')
@@ -28,7 +28,7 @@ if (!argv.lookup && !argv.announce) {
   process.exit(1)
 }
 
-const swarm = hyperswarm()
+const swarm = dswarm()
 
 let id = 0
 

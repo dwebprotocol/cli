@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const createDht = require('@hyperswarm/dht')
+const createDht = require('@dswarm/dht')
 const minimist = require('minimist')
 const os = require('os')
 const path = require('path')
@@ -59,7 +59,7 @@ const adaptive = argv.adaptive
 const port = argv.port
 const address = argv.address
 const bootstrap = argv.boostrap ? [].concat(argv.bootstrap || []) : undefined
-const version = require('@hyperswarm/dht/package.json').version
+const version = require('@dswarm/dht/package.json').version
 const verbose = argv.verbose
 
 const dht = createDht({ adaptive: adaptive, ephemeral: adaptive, id, bootstrap })
